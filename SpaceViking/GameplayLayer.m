@@ -89,9 +89,18 @@
         // Initialization code here.
         CGSize screenSize = [[CCDirector sharedDirector] winSize];
         self.isTouchEnabled = YES;
-        vikingSprite = [CCSprite spriteWithFile:@"sv_anim_1.png"];
+//        vikingSprite = [CCSprite spriteWithFile:@"sv_anim_1.png"];
+        
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"scene1atlas_default.plist"];
+        CCSpriteBatchNode *chapter2SpriteBatchNode = [CCSpriteBatchNode batchNodeWithFile:@"scene1atlas_default.png"];
+
+        vikingSprite = [CCSprite spriteWithSpriteFrameName:@"sv_anim_1.png"];
+        [chapter2SpriteBatchNode addChild:vikingSprite];
+        
         [vikingSprite setPosition:CGPointMake(screenSize.width/2, screenSize.height*0.17)];
-        [self addChild:vikingSprite];
+//        [self addChild:vikingSprite];
+        [self addChild:chapter2SpriteBatchNode];
+        
         [self initJoystickAndButtons];
         [self scheduleUpdate];
         

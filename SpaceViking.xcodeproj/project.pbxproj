@@ -169,6 +169,8 @@
 		2ED368591407F3FB00C86E54 /* SneakyButtonSkinnedBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED368501407F3FB00C86E54 /* SneakyButtonSkinnedBase.m */; };
 		2ED3685A1407F3FB00C86E54 /* SneakyJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED368521407F3FB00C86E54 /* SneakyJoystick.m */; };
 		2ED3685B1407F3FB00C86E54 /* SneakyJoystickSkinnedBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED368541407F3FB00C86E54 /* SneakyJoystickSkinnedBase.m */; };
+		2ED368621408ED6100C86E54 /* scene1atlas_default.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ED368601408ED6100C86E54 /* scene1atlas_default.plist */; };
+		2ED368631408ED6100C86E54 /* scene1atlas_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ED368611408ED6100C86E54 /* scene1atlas_default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -463,6 +465,8 @@
 		2ED368521407F3FB00C86E54 /* SneakyJoystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SneakyJoystick.m; sourceTree = "<group>"; };
 		2ED368531407F3FB00C86E54 /* SneakyJoystickSkinnedBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SneakyJoystickSkinnedBase.h; sourceTree = "<group>"; };
 		2ED368541407F3FB00C86E54 /* SneakyJoystickSkinnedBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SneakyJoystickSkinnedBase.m; sourceTree = "<group>"; };
+		2ED368601408ED6100C86E54 /* scene1atlas_default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = scene1atlas_default.plist; sourceTree = "<group>"; };
+		2ED368611408ED6100C86E54 /* scene1atlas_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scene1atlas_default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -865,6 +869,8 @@
 		2ED367DD1407E19700C86E54 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2ED368601408ED6100C86E54 /* scene1atlas_default.plist */,
+				2ED368611408ED6100C86E54 /* scene1atlas_default.png */,
 				2ED367DE1407E19700C86E54 /* App Launch Images */,
 				2ED367E61407E19700C86E54 /* Backgrounds */,
 				2ED367ED1407E19700C86E54 /* Icons */,
@@ -1094,6 +1100,8 @@
 				2ED3683C1407E19700C86E54 /* scene1atlasiPhone.png in Resources */,
 				2ED3683D1407E19700C86E54 /* sv_anim_1.png in Resources */,
 				2ED368571407F3FB00C86E54 /* LICENSE in Resources */,
+				2ED368621408ED6100C86E54 /* scene1atlas_default.plist in Resources */,
+				2ED368631408ED6100C86E54 /* scene1atlas_default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1304,6 +1312,7 @@
 				2ED367DC1407E04F00C86E54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
