@@ -180,6 +180,7 @@
 		2ED368761409579C00C86E54 /* Mallet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ED368721409579B00C86E54 /* Mallet.plist */; };
 		2ED368771409579C00C86E54 /* Viking.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ED368731409579C00C86E54 /* Viking.plist */; };
 		2ED5777B140C73B000F7FF49 /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED5777A140C73B000F7FF49 /* GameObject.m */; };
+		2ED57784140CABC700F7FF49 /* GameCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED57783140CABC700F7FF49 /* GameCharacter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -485,6 +486,8 @@
 		2ED368731409579C00C86E54 /* Viking.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Viking.plist; sourceTree = "<group>"; };
 		2ED57779140C73B000F7FF49 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
 		2ED5777A140C73B000F7FF49 /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObject.m; sourceTree = "<group>"; };
+		2ED57782140CABC700F7FF49 /* GameCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCharacter.h; sourceTree = "<group>"; };
+		2ED57783140CABC700F7FF49 /* GameCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCharacter.m; sourceTree = "<group>"; };
 		2ED8C0D8140B5B7200E3D33C /* CommonProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonProtocols.h; sourceTree = "<group>"; };
 		2EFA1264140B51AF001D0C26 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1042,6 +1045,8 @@
 			children = (
 				2ED57779140C73B000F7FF49 /* GameObject.h */,
 				2ED5777A140C73B000F7FF49 /* GameObject.m */,
+				2ED57782140CABC700F7FF49 /* GameCharacter.h */,
+				2ED57783140CABC700F7FF49 /* GameCharacter.m */,
 			);
 			name = GameObjects;
 			sourceTree = "<group>";
@@ -1323,6 +1328,7 @@
 				2ED3685A1407F3FB00C86E54 /* SneakyJoystick.m in Sources */,
 				2ED3685B1407F3FB00C86E54 /* SneakyJoystickSkinnedBase.m in Sources */,
 				2ED5777B140C73B000F7FF49 /* GameObject.m in Sources */,
+				2ED57784140CABC700F7FF49 /* GameCharacter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
