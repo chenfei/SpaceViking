@@ -180,7 +180,6 @@
 		2ED368761409579C00C86E54 /* Mallet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ED368721409579B00C86E54 /* Mallet.plist */; };
 		2ED368771409579C00C86E54 /* Viking.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ED368731409579C00C86E54 /* Viking.plist */; };
 		2ED5777B140C73B000F7FF49 /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED5777A140C73B000F7FF49 /* GameObject.m */; };
-		2ED57781140C9D3400F7FF49 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 2ED57780140C9D3100F7FF49 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -486,7 +485,6 @@
 		2ED368731409579C00C86E54 /* Viking.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Viking.plist; sourceTree = "<group>"; };
 		2ED57779140C73B000F7FF49 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
 		2ED5777A140C73B000F7FF49 /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObject.m; sourceTree = "<group>"; };
-		2ED57780140C9D3100F7FF49 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		2ED8C0D8140B5B7200E3D33C /* CommonProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonProtocols.h; sourceTree = "<group>"; };
 		2EFA1264140B51AF001D0C26 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -559,7 +557,6 @@
 				2ED3667D1407E04C00C86E54 /* Resources */,
 				2ED366911407E04C00C86E54 /* libs */,
 				2ED367CA1407E04F00C86E54 /* Supporting Files */,
-				2ED57780140C9D3100F7FF49 /* README */,
 			);
 			path = SpaceViking;
 			sourceTree = "<group>";
@@ -1209,7 +1206,6 @@
 				2ED368751409579C00C86E54 /* Health.plist in Resources */,
 				2ED368761409579C00C86E54 /* Mallet.plist in Resources */,
 				2ED368771409579C00C86E54 /* Viking.plist in Resources */,
-				2ED57781140C9D3400F7FF49 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
