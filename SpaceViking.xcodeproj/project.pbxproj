@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E256973140CF0B400776FC2 /* RadarDish.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E256972140CF0B400776FC2 /* RadarDish.m */; };
+		2E256977140D016A00776FC2 /* Viking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E256976140D016A00776FC2 /* Viking.m */; };
 		2ED3666D1407E04C00C86E54 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED3666C1407E04C00C86E54 /* QuartzCore.framework */; };
 		2ED3666F1407E04C00C86E54 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED3666E1407E04C00C86E54 /* OpenGLES.framework */; };
 		2ED366711407E04C00C86E54 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED366701407E04C00C86E54 /* OpenAL.framework */; };
@@ -184,6 +186,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E256971140CF0B400776FC2 /* RadarDish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadarDish.h; sourceTree = "<group>"; };
+		2E256972140CF0B400776FC2 /* RadarDish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadarDish.m; sourceTree = "<group>"; };
+		2E256975140D016A00776FC2 /* Viking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Viking.h; sourceTree = "<group>"; };
+		2E256976140D016A00776FC2 /* Viking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Viking.m; sourceTree = "<group>"; };
 		2ED366681407E04C00C86E54 /* SpaceViking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceViking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED3666C1407E04C00C86E54 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2ED3666E1407E04C00C86E54 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1047,6 +1053,8 @@
 				2ED5777A140C73B000F7FF49 /* GameObject.m */,
 				2ED57782140CABC700F7FF49 /* GameCharacter.h */,
 				2ED57783140CABC700F7FF49 /* GameCharacter.m */,
+				2E256975140D016A00776FC2 /* Viking.h */,
+				2E256976140D016A00776FC2 /* Viking.m */,
 			);
 			name = GameObjects;
 			sourceTree = "<group>";
@@ -1090,6 +1098,8 @@
 		2EFA1262140B5095001D0C26 /* EnemyObjects */ = {
 			isa = PBXGroup;
 			children = (
+				2E256971140CF0B400776FC2 /* RadarDish.h */,
+				2E256972140CF0B400776FC2 /* RadarDish.m */,
 			);
 			name = EnemyObjects;
 			sourceTree = "<group>";
@@ -1329,6 +1339,8 @@
 				2ED3685B1407F3FB00C86E54 /* SneakyJoystickSkinnedBase.m in Sources */,
 				2ED5777B140C73B000F7FF49 /* GameObject.m in Sources */,
 				2ED57784140CABC700F7FF49 /* GameCharacter.m in Sources */,
+				2E256973140CF0B400776FC2 /* RadarDish.m in Sources */,
+				2E256977140D016A00776FC2 /* Viking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
