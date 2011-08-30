@@ -100,6 +100,42 @@
         [vikingSprite setPosition:CGPointMake(screenSize.width/2, screenSize.height*0.17)];
 //        [self addChild:vikingSprite];
         [self addChild:chapter2SpriteBatchNode];
+/*
+        CCSprite *animatingRobot = [CCSprite spriteWithFile:@"an1_anim1.png"];
+        [animatingRobot setPosition:ccp([vikingSprite position].x + 50.0, [vikingSprite position].y)];
+        [self addChild:animatingRobot];
+
+        CCAnimation *robotAnim = [CCAnimation animation];
+        [robotAnim addFrameWithFilename:@"an1_anim2.png"];
+        [robotAnim addFrameWithFilename:@"an1_anim3.png"];
+        [robotAnim addFrameWithFilename:@"an1_anim4.png"];
+        
+        
+        id robotAnimationAction = [CCAnimate actionWithDuration:1 animation:robotAnim restoreOriginalFrame:YES];
+        id repeatRobotAnimation = [CCRepeatForever actionWithAction:robotAnimationAction];
+        [animatingRobot runAction:repeatRobotAnimation];
+        
+        // Animation example with a CCSpriteBatchNode
+        CCAnimation *exampleAnim = [CCAnimation animation];
+        [exampleAnim addFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"sv_anim_2.png"]];
+        [exampleAnim addFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"sv_anim_3.png"]];
+        [exampleAnim addFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"sv_anim_4.png"]];
+        id animateAction = [CCAnimate actionWithDuration:0.5f animation:exampleAnim restoreOriginalFrame:NO];
+        id repeatAction = [CCRepeatForever actionWithAction:animateAction];
+        [vikingSprite runAction:repeatAction];
+  */  
+        // use CCAnimationCatch
+        CCAnimation *animation = [CCAnimation animation];
+        [animation addFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"sv_anim_2.png"]];
+        [animation addFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"sv_anim_3.png"]];
+        [animation addFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"sv_anim_4.png"]];
+        
+        CCAnimationCache *animationCache = [CCAnimationCache sharedAnimationCache];
+        [animationCache addAnimation:animation name:@"vikingAnimation"];
+        
+        id animationAction = [CCAnimate actionWithDuration:1 animation:animation restoreOriginalFrame:YES];
+        id repeatAnimationAction = [CCRepeatForever actionWithAction:animationAction];
+        [vikingSprite runAction:repeatAnimationAction];
         
         [self initJoystickAndButtons];
         [self scheduleUpdate];
