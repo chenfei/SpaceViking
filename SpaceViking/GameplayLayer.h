@@ -1,23 +1,23 @@
-//
 //  GameplayLayer.h
 //  SpaceViking
-//
-//  Created by chen fei on 11-8-26.
-//  Copyright 2011年 founder. All rights reserved.
-//
 
-#import "CCLayer.h"
-#import "CCSprite.h"
+#import <Foundation/Foundation.h>
+#import "cocos2d.h"
 #import "SneakyJoystick.h"
-#import "SneakyJoystickSkinnedBase.h"
 #import "SneakyButton.h"
 #import "SneakyButtonSkinnedBase.h"
+#import "SneakyJoystickSkinnedBase.h"
+#import "Constants.h"
+#import "CommonProtocols.h"
+#import "RadarDish.h"
+#import "Viking.h"
 
-@interface GameplayLayer : CCLayer {
+@interface GameplayLayer : CCLayer <GameplayLayerDelegate> { 
     CCSprite *vikingSprite;
-    SneakyJoystick *leftJoyStick;
-    SneakyButton *jumpButton;
-    SneakyButton *attackButton;
+    SneakyJoystick *leftJoystick;  
+    SneakyButton *jumpButton;  
+    SneakyButton *attackButton; 
+    CCSpriteBatchNode *sceneSpriteBatchNode;
 }
 
 @end
