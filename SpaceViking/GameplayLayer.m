@@ -2,6 +2,12 @@
 //  SpaceViking
 
 #import "GameplayLayer.h"
+#import "SpaceCargoShip.h"
+#import "EnemyRobot.h"
+#import "PhaserBullet.h"
+#import "Mallet.h"
+#import "Health.h"
+
 @implementation GameplayLayer
 
 - (void) dealloc {
@@ -9,6 +15,7 @@
     [jumpButton release];
     [attackButton release];
     [super dealloc];
+    
 }
 
 -(void)initJoystickAndButtons {
@@ -122,23 +129,68 @@
                atLocation:(CGPoint)spawnLocation 
                withZValue:(int)ZValue {
     
-    if (objectType == kEnemyTypeRadarDish) {
+    if (kEnemyTypeRadarDish == objectType) {
         CCLOG(@"Creating the Radar Enemy");
         RadarDish *radarDish = [[RadarDish alloc] initWithSpriteFrameName:@"radar_1.png"];
         [radarDish setCharacterHealth:initialHealth];
         [radarDish setPosition:spawnLocation];
-        [sceneSpriteBatchNode addChild:radarDish 
-                                     z:ZValue 
-                                   tag:kRadarDishTagValue];
+        [sceneSpriteBatchNode addChild:radarDish z:ZValue tag:kRadarDishTagValue];
         [radarDish release];
-    } 
-    
+    } else if (kEnemyTypeAlienRobot == objectType) {
+        CCLOG(@"Creating the Alien Robot");
+        EnemyRobot *enemyRobot = [[EnemyRobot alloc] initWithSpriteFrameName:@"an1_anim1.png"];
+        [enemyRobot setCharacterHealth:initialHealth];
+        [enemyRobot setPosition:spawnLocation];
+        [enemyRobot changeState:kStateSpawning];
+        [sceneSpriteBatchNode addChild:enemyRobot z:ZValue];
+        [enemyRobot setDelegate:self];
+        [enemyRobot release];
+    } else if (kEnemyTypeSpaceCargoShip == objectType) {
+        CCLOG(@"Creating the Cargo Ship Enemy");
+        SpaceCargoShip *spaceCargoShip = [[SpaceCargoShip alloc] initWithSpriteFrameName:@"ship_2.png"];
+        [spaceCargoShip setDelegate:self];
+        [spaceCargoShip setPosition:spawnLocation];
+        [sceneSpriteBatchNode addChild:spaceCargoShip z:ZValue];
+        [spaceCargoShip release];
+    } else if (kPowerUpTypeMallet == objectType) {
+        CCLOG(@"GameplayLayer -> Creating mallet powerup");
+        Mallet *mallet = [[Mallet alloc] initWithSpriteFrameName:@"mallet_1.png"];
+        [mallet setPosition:spawnLocation];
+        [sceneSpriteBatchNode addChild:mallet];
+        [mallet release];
+    } else if (kPowerUpTypeHealth == objectType) {
+        CCLOG(@"GameplayLayer-> Creating Health Powerup");
+        Health *health = [[Health alloc] initWithSpriteFrameName:@"sandwich_1.png"];
+        [health setPosition:spawnLocation];
+        [sceneSpriteBatchNode addChild:health];
+        [health release];
+    }
 }
 
 -(void)createPhaserWithDirection:(PhaserDirection)phaserDirection andPosition:(CGPoint)spawnPosition {
-    CCLOG(@"Placeholder for chapter 5, see below");
-    return;
+    PhaserBullet *phaserBullet = [[PhaserBullet alloc] initWithSpriteFrameName:@"beam_1.png"];
+    [phaserBullet setPosition:spawnPosition];
+    [phaserBullet setMyDirection:phaserDirection];
+    [phaserBullet setCharacterState:kStateSpawning];
+    [sceneSpriteBatchNode addChild:phaserBullet];
+    [phaserBullet release];
 }
+
+-(void)addEnemy {
+    CGSize screenSize = [CCDirector sharedDirector].winSize;
+    RadarDish *radarDish = (RadarDish*)[sceneSpriteBatchNode getChildByTag:kRadarDishTagValue];
+    if (radarDish != nil) {
+        if ([radarDish characterState] != kStateDead) {
+            [self createObjectOfType:kEnemyTypeAlienRobot withHealth:100 
+                          atLocation:ccp(screenSize.width * 0.195f,
+                                         screenSize.height * 0.1432f) 
+                          withZValue:2];
+        } else {
+            [self unschedule:@selector(addEnemy)];
+        }
+    }
+} 
+
 
 -(id)init {
     self = [super init];
@@ -187,7 +239,25 @@
                       withZValue:10];                            // 7
         
         
+//        id wavesAction = [CCWaves actionWithWaves:5 amplitude:20 horizontal:NO vertical:YES grid:ccg(15, 10) duration:20];
+//        [sceneSpriteBatchNode runAction:[CCRepeatForever actionWithAction:wavesAction]];
+        
+        CCLabelTTF *gameBeginLabel = [CCLabelTTF labelWithString:@"Game Start" fontName:@"Helvetica" fontSize:64];
+        [gameBeginLabel setPosition:ccp(screenSize.width/2, screenSize.height/2)];
+        [self addChild:gameBeginLabel];
+        [gameBeginLabel setAnchorPoint:ccp(0, 0.5)];
+        id labelAction = [CCSpawn actions:[CCScaleBy actionWithDuration:2.0 scale:4], [CCFadeOut actionWithDuration:2.0], nil];
+        [gameBeginLabel runAction:labelAction];
+        
         [self scheduleUpdate];                                   // 8
+        
+        
+        [self schedule:@selector(addEnemy) interval:10.0f];
+        [self createObjectOfType:kEnemyTypeSpaceCargoShip withHealth:0 
+                      atLocation:ccp(screenSize.width * -0.5f,
+                                     screenSize.height * 0.74f) 
+                      withZValue:50];
+        
     }
     return self; 
 }

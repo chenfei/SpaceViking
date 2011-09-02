@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		2E256973140CF0B400776FC2 /* RadarDish.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E256972140CF0B400776FC2 /* RadarDish.m */; };
 		2E256977140D016A00776FC2 /* Viking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E256976140D016A00776FC2 /* Viking.m */; };
+		2E6CA2D0140F3CEB005DEFBF /* SpaceCargoShip.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6CA2CF140F3CEB005DEFBF /* SpaceCargoShip.m */; };
+		2E6CA2D4140F4288005DEFBF /* EnemyRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6CA2D3140F4288005DEFBF /* EnemyRobot.m */; };
+		2E9A5B00140E4B9B00B5738E /* Mallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9A5AFF140E4B9B00B5738E /* Mallet.m */; };
+		2E9A5B04140E505000B5738E /* Health.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9A5B03140E505000B5738E /* Health.m */; };
 		2ED3666D1407E04C00C86E54 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED3666C1407E04C00C86E54 /* QuartzCore.framework */; };
 		2ED3666F1407E04C00C86E54 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED3666E1407E04C00C86E54 /* OpenGLES.framework */; };
 		2ED366711407E04C00C86E54 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED366701407E04C00C86E54 /* OpenAL.framework */; };
@@ -183,6 +187,8 @@
 		2ED368771409579C00C86E54 /* Viking.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ED368731409579C00C86E54 /* Viking.plist */; };
 		2ED5777B140C73B000F7FF49 /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED5777A140C73B000F7FF49 /* GameObject.m */; };
 		2ED57784140CABC700F7FF49 /* GameCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED57783140CABC700F7FF49 /* GameCharacter.m */; };
+		2EDEDEA91410957500E4B485 /* PhaserBullet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EDEDEA81410957500E4B485 /* PhaserBullet.plist */; };
+		2EDEDEAD141095BD00E4B485 /* PhaserBullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEDEAC141095BD00E4B485 /* PhaserBullet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -190,6 +196,14 @@
 		2E256972140CF0B400776FC2 /* RadarDish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadarDish.m; sourceTree = "<group>"; };
 		2E256975140D016A00776FC2 /* Viking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Viking.h; sourceTree = "<group>"; };
 		2E256976140D016A00776FC2 /* Viking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Viking.m; sourceTree = "<group>"; };
+		2E6CA2CE140F3CEB005DEFBF /* SpaceCargoShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceCargoShip.h; sourceTree = "<group>"; };
+		2E6CA2CF140F3CEB005DEFBF /* SpaceCargoShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceCargoShip.m; sourceTree = "<group>"; };
+		2E6CA2D2140F4288005DEFBF /* EnemyRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyRobot.h; sourceTree = "<group>"; };
+		2E6CA2D3140F4288005DEFBF /* EnemyRobot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnemyRobot.m; sourceTree = "<group>"; };
+		2E9A5AFE140E4B9B00B5738E /* Mallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mallet.h; sourceTree = "<group>"; };
+		2E9A5AFF140E4B9B00B5738E /* Mallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mallet.m; sourceTree = "<group>"; };
+		2E9A5B02140E505000B5738E /* Health.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Health.h; sourceTree = "<group>"; };
+		2E9A5B03140E505000B5738E /* Health.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Health.m; sourceTree = "<group>"; };
 		2ED366681407E04C00C86E54 /* SpaceViking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceViking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED3666C1407E04C00C86E54 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2ED3666E1407E04C00C86E54 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -495,6 +509,9 @@
 		2ED57782140CABC700F7FF49 /* GameCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCharacter.h; sourceTree = "<group>"; };
 		2ED57783140CABC700F7FF49 /* GameCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCharacter.m; sourceTree = "<group>"; };
 		2ED8C0D8140B5B7200E3D33C /* CommonProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonProtocols.h; sourceTree = "<group>"; };
+		2EDEDEA81410957500E4B485 /* PhaserBullet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PhaserBullet.plist; sourceTree = "<group>"; };
+		2EDEDEAB141095BD00E4B485 /* PhaserBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhaserBullet.h; sourceTree = "<group>"; };
+		2EDEDEAC141095BD00E4B485 /* PhaserBullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhaserBullet.m; sourceTree = "<group>"; };
 		2EFA1264140B51AF001D0C26 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1039,6 +1056,7 @@
 			children = (
 				2ED3686E1409541D00C86E54 /* RadarDish.plist */,
 				2ED368701409579B00C86E54 /* EnemyRobot.plist */,
+				2EDEDEA81410957500E4B485 /* PhaserBullet.plist */,
 				2ED368711409579B00C86E54 /* Health.plist */,
 				2ED368721409579B00C86E54 /* Mallet.plist */,
 				2ED368731409579C00C86E54 /* Viking.plist */,
@@ -1055,6 +1073,8 @@
 				2ED57783140CABC700F7FF49 /* GameCharacter.m */,
 				2E256975140D016A00776FC2 /* Viking.h */,
 				2E256976140D016A00776FC2 /* Viking.m */,
+				2E6CA2CE140F3CEB005DEFBF /* SpaceCargoShip.h */,
+				2E6CA2CF140F3CEB005DEFBF /* SpaceCargoShip.m */,
 			);
 			name = GameObjects;
 			sourceTree = "<group>";
@@ -1091,6 +1111,10 @@
 		2EFA1261140B5092001D0C26 /* PowerUps */ = {
 			isa = PBXGroup;
 			children = (
+				2E9A5AFE140E4B9B00B5738E /* Mallet.h */,
+				2E9A5AFF140E4B9B00B5738E /* Mallet.m */,
+				2E9A5B02140E505000B5738E /* Health.h */,
+				2E9A5B03140E505000B5738E /* Health.m */,
 			);
 			name = PowerUps;
 			sourceTree = "<group>";
@@ -1100,6 +1124,10 @@
 			children = (
 				2E256971140CF0B400776FC2 /* RadarDish.h */,
 				2E256972140CF0B400776FC2 /* RadarDish.m */,
+				2E6CA2D2140F4288005DEFBF /* EnemyRobot.h */,
+				2E6CA2D3140F4288005DEFBF /* EnemyRobot.m */,
+				2EDEDEAB141095BD00E4B485 /* PhaserBullet.h */,
+				2EDEDEAC141095BD00E4B485 /* PhaserBullet.m */,
 			);
 			name = EnemyObjects;
 			sourceTree = "<group>";
@@ -1221,6 +1249,7 @@
 				2ED368751409579C00C86E54 /* Health.plist in Resources */,
 				2ED368761409579C00C86E54 /* Mallet.plist in Resources */,
 				2ED368771409579C00C86E54 /* Viking.plist in Resources */,
+				2EDEDEA91410957500E4B485 /* PhaserBullet.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1341,6 +1370,11 @@
 				2ED57784140CABC700F7FF49 /* GameCharacter.m in Sources */,
 				2E256973140CF0B400776FC2 /* RadarDish.m in Sources */,
 				2E256977140D016A00776FC2 /* Viking.m in Sources */,
+				2E9A5B00140E4B9B00B5738E /* Mallet.m in Sources */,
+				2E9A5B04140E505000B5738E /* Health.m in Sources */,
+				2E6CA2D0140F3CEB005DEFBF /* SpaceCargoShip.m in Sources */,
+				2E6CA2D4140F4288005DEFBF /* EnemyRobot.m in Sources */,
+				2EDEDEAD141095BD00E4B485 /* PhaserBullet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
