@@ -189,6 +189,8 @@
 		2ED57784140CABC700F7FF49 /* GameCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED57783140CABC700F7FF49 /* GameCharacter.m */; };
 		2EDEDEA91410957500E4B485 /* PhaserBullet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EDEDEA81410957500E4B485 /* PhaserBullet.plist */; };
 		2EDEDEAD141095BD00E4B485 /* PhaserBullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEDEAC141095BD00E4B485 /* PhaserBullet.m */; };
+		2EDEDEF51410F3E500E4B485 /* SpaceVikingFont.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 2EDEDEF31410F3E500E4B485 /* SpaceVikingFont.fnt */; };
+		2EDEDEF61410F3E500E4B485 /* SpaceVikingFont.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EDEDEF41410F3E500E4B485 /* SpaceVikingFont.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -512,6 +514,8 @@
 		2EDEDEA81410957500E4B485 /* PhaserBullet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PhaserBullet.plist; sourceTree = "<group>"; };
 		2EDEDEAB141095BD00E4B485 /* PhaserBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhaserBullet.h; sourceTree = "<group>"; };
 		2EDEDEAC141095BD00E4B485 /* PhaserBullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhaserBullet.m; sourceTree = "<group>"; };
+		2EDEDEF31410F3E500E4B485 /* SpaceVikingFont.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SpaceVikingFont.fnt; sourceTree = "<group>"; };
+		2EDEDEF41410F3E500E4B485 /* SpaceVikingFont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpaceVikingFont.png; sourceTree = "<group>"; };
 		2EFA1264140B51AF001D0C26 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -916,6 +920,8 @@
 				2ED368651408F7AF00C86E54 /* an1_anim1.png */,
 				2ED368661408F7AF00C86E54 /* an1_anim2.png */,
 				2ED368671408F7AF00C86E54 /* an1_anim3.png */,
+				2EDEDEF31410F3E500E4B485 /* SpaceVikingFont.fnt */,
+				2EDEDEF41410F3E500E4B485 /* SpaceVikingFont.png */,
 				2ED368681408F7AF00C86E54 /* an1_anim4.png */,
 				2ED368601408ED6100C86E54 /* scene1atlas_default.plist */,
 				2ED368611408ED6100C86E54 /* scene1atlas_default.png */,
@@ -1250,6 +1256,8 @@
 				2ED368761409579C00C86E54 /* Mallet.plist in Resources */,
 				2ED368771409579C00C86E54 /* Viking.plist in Resources */,
 				2EDEDEA91410957500E4B485 /* PhaserBullet.plist in Resources */,
+				2EDEDEF51410F3E500E4B485 /* SpaceVikingFont.fnt in Resources */,
+				2EDEDEF61410F3E500E4B485 /* SpaceVikingFont.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

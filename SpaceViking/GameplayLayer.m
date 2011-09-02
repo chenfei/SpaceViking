@@ -245,7 +245,7 @@
         CCLabelTTF *gameBeginLabel = [CCLabelTTF labelWithString:@"Game Start" fontName:@"Helvetica" fontSize:64];
         [gameBeginLabel setPosition:ccp(screenSize.width/2, screenSize.height/2)];
         [self addChild:gameBeginLabel];
-        [gameBeginLabel setAnchorPoint:ccp(0, 0.5)];
+        [gameBeginLabel setAnchorPoint:ccp(0.5, 0.5)];
         id labelAction = [CCSpawn actions:[CCScaleBy actionWithDuration:2.0 scale:4], [CCFadeOut actionWithDuration:2.0], nil];
         [gameBeginLabel runAction:labelAction];
         
